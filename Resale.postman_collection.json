@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "b12c767c-3ca3-41f9-8685-586c3bf5784b",
+		"name": "Resale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListaEntidades",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Entidade",
+						"value": "IMOVEL",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Entidade",
+						"value": "IMOBILIARIA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Joao\": \"sdifsfd\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/ResaleApi/v1/ListEntidades",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"ResaleApi",
+						"v1",
+						"ListEntidades"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastroImobiliaria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"NOME\": \"Imobiliaria Reis IIi222\",\r\n\"ENDERECO\": \"TDSJNFIDSFD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/ResaleApi/v1/RegisterImobiliaria",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"ResaleApi",
+						"v1",
+						"RegisterImobiliaria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CadastroImovel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"NOMEEE\": \"Imovel de Joao Pedro\",\r\n\"ENDERECO\": \"Rua 7a Quadra 3\",\r\n\"DESCRICAO\": \"Casa de esqueina\",\r\n\"STATUS\": \"Ativo\",\r\n\"TIPO\": \"Casa\",\r\n\"FINALIDADE\": \"Residencial\",\r\n\"IMOBILIARIA\": \"Imobiliaria Reis\",\r\n\"CARACTERISTICA\": \"Dois quartos 3 banheiros \"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/ResaleApi/v1/RegisterImovel",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"ResaleApi",
+						"v1",
+						"RegisterImovel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AlteraImobiliaria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"IMOBILIARIA_ALTERAR\": \"Imobiliaria Reis\",\r\n\"NOME\": \"Imobiliaria Reis\",\r\n\"ENDERECO\": \"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000//ResaleApi/v1/EditImobiliaria",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"ResaleApi",
+						"v1",
+						"EditImobiliaria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AlteraImovel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"NOME\": \"Imovel de Joao\",\r\n\"ENDERECO\": \"Rua 7a Quadra 3\",\r\n\"DESCRICAO\": \"Casa de esqueina\",\r\n\"STATUS\": \"Ativo\",\r\n\"TIPO\": \"Casa\",\r\n\"FINALIDADE\": \"Residencial\",\r\n\"IMOBILIARIA\": \"Imobiliaria Reis\",\r\n\"CARACTERISTICAS\": \"Dois quartos 3 banheiros \",\r\n\"IMOVEL_ALTERAR\": \"Imovel de Joao\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000//ResaleApi/v1/EditImovel",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"ResaleApi",
+						"v1",
+						"EditImovel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteImobiliaria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"IMOBILIARIA_DELETAR\": \"Imobiliaria Reis IIi222\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/ResaleApi/v1/DeleteImobiliaria",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"ResaleApi",
+						"v1",
+						"DeleteImobiliaria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteImovel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"IMOVEL_DELETAR\": \"Imovel de Joao Pedro\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/ResaleApi/v1/DeleteImovel",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"ResaleApi",
+						"v1",
+						"DeleteImovel"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,19 @@
+Criar Tabela de Imobiliaria :
+
+CREATE TABLE `imobiliaria` (
+  `nome` varchar(45) NOT NULL,
+  `endereco` varchar(45) DEFAULT NULL
+);
+
+Criar tabela de Imovel:
+CREATE TABLE `imovel` (
+  `nome` varchar(45) NOT NULL,
+  `endereco` varchar(45) NOT NULL,
+  `descricao` varchar(45) NOT NULL,
+  `status` varchar(45) NOT NULL,
+  `caracteristicas` varchar(450) DEFAULT NULL,
+  `tipo` varchar(45) NOT NULL,
+  `finalidade` varchar(45) DEFAULT NULL,
+  `imobiliaria` varchar(45) NOT NULL
+) ;
+
